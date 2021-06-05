@@ -298,6 +298,10 @@ nav ul li.btn.hide i:before{
     
   }
   
+.navbar-collapse ul li, .navbar-nav ul li{
+ 
+  overflow-y:scroll;
+}
 
 
 
