@@ -1,0 +1,341 @@
+.header{
+    
+    font-size: 17px;
+}
+.main{
+  color:black;
+
+}
+.navbar{
+  position: fixed;
+}
+
+.dropbtn {
+  background-color:white;
+  color:black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ffffff}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color:skyblue;
+}
+
+.mar{
+    background-color: coral;
+}
+
+
+
+.marquee{
+    background-color: coral;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+
+#occolor{
+  background: rgb(25, 157, 180);
+  color:cornflowerblue;
+}
+#occolor:hover{
+  color:cornflowerblue;
+}
+
+#occolor2:hover{
+  color:cornflowerblue;
+}
+
+
+
+.agni{
+  display:flex;
+}
+
+.row{
+  width:100%;
+}
+
+.btn{
+  background-color: lightblue; 
+  color: black; 
+  border: 1px solid black;
+  font-size: 20px;
+  
+}
+
+.btn:hover {
+  background-color: rgb(104, 207, 248);
+  color: white;
+}
+
+#col2{
+  padding-top: 20px;
+}
+
+
+.dropbtn:hover{
+  color:cornflowerblue;
+
+}
+
+.imgc1{
+  padding-bottom: 20px;
+  padding-right: 0px;
+}
+
+.imgc2{
+  padding-top: 5px;
+  padding-left: 0px;
+}
+
+.aa>p{
+  font-size: 30px;
+
+}
+.aa>h2{
+  font-size: 30px;
+  color:cornflowerblue;
+}
+
+.part2>h2{
+  color:brown;
+}
+
+#aboutcol1{
+  padding-left: 30px;
+}
+
+.abcol2{
+  color:brown;
+}
+
+.abcol21{
+  padding-right: 30px;
+  padding-left: 30px;
+
+}
+
+.part3{
+  background-color: rgb(3, 3, 61);
+  color:white;
+}
+
+#part3col1{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#part3col2{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+#d1{
+ height:500px;
+  overflow-y:scroll;
+}
+
+.organizers{
+  display:flex;
+}
+
+
+
+#more{
+  display: none;
+}
+
+
+#bt:hover{
+  color:black;
+  background-color: none;
+
+}
+#bt{
+  background-color: lightblue; 
+  color: black; 
+  border: 2px solid black;
+  font-size: 15px;
+  align-content: center;
+}
+
+
+sup{
+  vertical-align: super;
+  font-size: x-small;
+
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: white;
+  padding: 5px 0px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.nav-item{
+  position: relative;
+  width: auto;
+  margin: 0 9px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.nav-item:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.nav-item:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 0;
+  color: white;
+  font-size: 0px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+nav ul li:hover a{
+  color: black;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+  
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 0px;
+    
+  }
+  
+nav ul{
+height: 100%;
+
+}
+
+
+  nav ul li.navbar{
+   
+    
+    width: 100%;
+    
+    display: none;
+  }
+  nav ul li.navbar.show{
+    
+    
+    display: block;
+    
+  }
+  nav ul li.btn{
+    
+    display: block;
+  }
+  nav ul li.nav-item:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.navbar:hover:after{
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
